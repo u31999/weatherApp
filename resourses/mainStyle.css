@@ -1,0 +1,234 @@
+:root {
+    --headerColor : #343a40;
+    --redOrange : #eb6f4c;
+    --blue : #007bff;
+}
+*, html, body{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    min-width: 100%;
+    overflow-x: hidden;
+}
+
+/*the header style*/
+header{
+    background-color: var(--headerColor);
+    height: 120px;
+    display: flex;
+}
+
+header .logo {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: var(--redOrange);
+    text-shadow: black 2px 2px 2px;
+    font-family: monospace;
+    text-decoration: underline 2px #009688;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+header .search {
+    flex: 3;
+}
+
+.search .search-box {
+    width: 100%;
+    height: 100%;
+}
+
+.search-box input {
+    width: 450px;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-indent: 10px;
+}
+
+.search-box input:focus, .search-box input:focus-visible , .search-box input:focus-within{
+    border: outset 3px var(--redOrange);
+    outline: solid 0.1px black;
+}
+
+.search-box button {
+    height: 40px;
+    width: 70px;
+    font-weight: 900;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    background-color: var(--redOrange);
+}
+
+.search-box button:hover, .c-or-f button{
+    cursor: pointer;
+}
+
+.c-or-f button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: 900;
+}
+
+/*body style*/
+
+#top-main-container {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+
+#top-main-container .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#top-main-container .left .name {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#top-main-container .left .weather {
+    font-size: 1.5rem;
+}
+
+#top-main-container .left .temp {
+    font-size: 6rem;
+}
+
+#top-main-container .left .h-l-temp {
+    display: flex;
+    gap: 10px;
+}
+
+.right {
+    display: flex;
+    gap: 5px;
+    overflow-x: auto;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-right: 25px;
+}
+
+#today-forcast {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#full-day-data {
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--headerColor);
+    
+}
+#full-day-data > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+#full-day-data .top-data div, #full-day-data .bottom-data div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    gap: 5px;
+}
+#full-day-data .t {
+    color: #6c757d;
+    font-weight: 400;
+    font-size: 80%;
+    font-family: cursive;
+}
+#full-day-data .n {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+}
+#daily-data {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+#daily-data .header {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: rgb(0 150 136);
+    font-family: cursive;
+    font-weight: 900;
+}
+#daily-data .header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+#daily-data .body {
+    display: flex;
+    flex-direction: column;
+}
+#daily-data .body div {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+#daily-data .body div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-family: cursive;
+    font-weight: 900;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--redOrange);
+    background-color: var(--headerColor);
+    height: 100px;
+}
+
+.footer i:hover {
+    cursor: pointer;
+}

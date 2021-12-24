@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./resourses/mainStyle.css">
+    <link rel="stylesheet" href="./resourses/mediaQuery.css">
+    <script defer src="/resourses/index.js" type="module"></script>
+    <title>Weather Now</title>
+</head>
+<header>
+    <div class='logo'>Weather<br>App</div>
+    <div class="search">
+        <div class="search-box">
+            <input type="search" id='search' placeholder="Enter A City">
+            <button class="search-btn">Search</button>
+        </div>
+    </div>
+    <div class='c-or-f'>
+        <button>
+            <span class="c active">°C</span>
+            /
+            <span class="f">°F</span>
+        </button>
+    </div>
+</header>
+
+<body>
+    <div id='top-main-container'>
+        <div class="left">
+            <div class="name"></div>
+            <div class="weather"></div>
+            <div class="temp"></div>
+            <div class="h-l-temp">
+                <div class="h">H:</div>||
+                <div class="l">L:</div>
+            </div>
+        </div>
+        <div class='right'></div>
+    </div>
+    <div id='today-forcast'>
+    </div>
+    <div id='full-day-data'>
+        <div class="top-data">
+            <div class="sunrise">
+                <div class="t">SUNRISE:</div>
+                <div class="n"></div>
+            </div>
+            <div class="sunset">
+                <div class="t">SUNSET:</div>
+                <div class="n"></div>
+            </div>
+            <div class="chance-of-rain">
+                <div class="t">RAIN:</div>
+                <div class="n"></div>
+            </div>
+            <div class="humidity">
+                <div class="t">HUMIDITY:</div>
+                <div class="n"></div>
+            </div>
+            <div class="wind">
+                <div class="t">WIND:</div>
+                <div class="n"></div>
+            </div>
+        </div>
+        <div class="bottom-data">
+            <div class="feels-like">
+                <div class='t'>FEELS LIKE:</div>
+                <div class='n'></div>
+            </div>
+            <div class="preciption">
+                <div class="t">PRECIPITATION:</div>
+                <div class="n"></div>
+            </div>
+            <div class="pressure">
+                <div class="t">PRESSURE:</div>
+                <div class="n"></div>
+            </div>
+            <div class="visibility">
+                <div class="t">VISIBILITY:</div>
+                <div class="n"></div>
+            </div>
+            <div class="uv-index">
+                <div class="t">UV INDEX:</div>
+                <div class="n"></div>
+            </div>
+        </div>
+    </div>
+    <div id='daily-data'>
+        <div class="header">
+            <div>Day</div>
+            <div></div>
+            <div>Rain</div>
+            <div>HUMIDITY</div>
+            <div>TEMPERATURE</div>
+        </div>
+        <div class="body"></div>
+    </div>
+    <div class="footer">
+        <div>
+            by &copy; Ahmed Hassan
+        </div>
+        <div>
+            <i class="fab fa-github"></i>
+        </div>
+    </div>
+
+</body>
+
+
+
+</html>
