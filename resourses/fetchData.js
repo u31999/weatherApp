@@ -9,7 +9,7 @@ const getWeatherData = async (unit, city) => {
         let res = `https://openweathermap.org/img/wn/${ic}@2x.png`;
         return res;
     };
-    const fetchUrl = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=${u}&appid=ac4c1552606cb8979d2cd3fcc345d612`,
+    const fetchUrl = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${u}&appid=ac4c1552606cb8979d2cd3fcc345d612`,
         { mode: 'cors' });
     const urlJson = await fetchUrl.json();
 
