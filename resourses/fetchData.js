@@ -21,7 +21,6 @@ const getWeatherData = async (unit, city) => {
     cityName = urlJson.name;
     lat = urlJson.coord.lat;
     lng = urlJson.coord.lon;
-    console.log(urlJson);
 
     return {
         weatherMain,
@@ -127,7 +126,7 @@ const oneCallApi = async (lat, lon, unit) => {
 
     }
     function dailyData(data) {
-        console.log(data);
+
         const highLowTemp = (temp) => {
             let h, l;
             let values = [...Object.values(temp)];
