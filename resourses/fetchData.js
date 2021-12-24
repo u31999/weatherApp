@@ -6,10 +6,10 @@ const getWeatherData = async (unit, city) => {
     if (unit === 'f') u = 'imperial';
 
     let geticonUrl = (ic) => {
-        let res = `https://openweathermap.org/img/wn/${ic}@2x.png`;
+        let res = `//openweathermap.org/img/wn/${ic}@2x.png`;
         return res;
     };
-    const fetchUrl = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${u}&appid=ac4c1552606cb8979d2cd3fcc345d612`,
+    const fetchUrl = await fetch(`api.openweathermap.org/data/2.5/weather?q=${city}&units=${u}&appid=ac4c1552606cb8979d2cd3fcc345d612`,
         { mode: 'cors' });
     const urlJson = await fetchUrl.json();
 
@@ -37,7 +37,7 @@ const getWeatherData = async (unit, city) => {
 const HourData = class {
     constructor(time, iconUrl, temp) {
         this.time = time;
-        this.iconUrl = `https://openweathermap.org/img/wn/${iconUrl}@2x.png`;
+        this.iconUrl = `openweathermap.org/img/wn/${iconUrl}@2x.png`;
         this.temp = Math.floor(temp);
     }
 };
@@ -45,7 +45,7 @@ const HourData = class {
 const DailyData = class {
     constructor(timeStamp, iconUrl, rain, humidity, hTemp, lTemp) {
         this.timeStamp = timeStamp;
-        this.iconUrl = `https://openweathermap.org/img/wn/${iconUrl}@2x.png`;
+        this.iconUrl = `openweathermap.org/img/wn/${iconUrl}@2x.png`;
         this.rain = rain;
         this.humidity = humidity;
         this.hTemp = hTemp;
@@ -91,7 +91,7 @@ const oneCallApi = async (lat, lon, unit) => {
     if (unit === 'c') u = 'metric';
     if (unit === 'f') u = 'imperial';
 
-    let response = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=${u}&appid=ac4c1552606cb8979d2cd3fcc345d612`,
+    let response = await fetch(`api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=${u}&appid=ac4c1552606cb8979d2cd3fcc345d612`,
         { mode: 'cors' });
     let reponseJson = await response.json();
 
