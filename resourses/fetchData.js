@@ -21,7 +21,6 @@ const getWeatherData = async (unit, city) => {
     cityName = urlJson.name;
     lat = urlJson.coord.lat;
     lng = urlJson.coord.lon;
-    console.log(urlJson);
 
     return {
         weatherMain,
