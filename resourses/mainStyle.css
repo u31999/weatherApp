@@ -170,7 +170,7 @@ header .search {
     color: #6c757d;
     font-weight: 400;
     font-size: 80%;
-    font-family: cursive;
+    font-family: system-ui;
 }
 #full-day-data .n {
     color: white;
@@ -191,7 +191,7 @@ header .search {
     padding-bottom: 20px;
     padding-top: 20px;
     background-color: rgb(0 150 136);
-    font-family: cursive;
+    font-family: system-ui;
     font-weight: 900;
 }
 #daily-data .header div {
@@ -214,7 +214,7 @@ header .search {
     justify-content: center;
     align-items: center;
     flex: 1;
-    font-family: cursive;
+    font-family: system-ui;
     font-weight: 900;
 }
 .footer {

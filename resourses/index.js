@@ -35,7 +35,8 @@ const setData = (res, divs) => {
 
   const setDailyData = (data) => {
     const body = document.querySelector('#daily-data .body');
-    body.childNodes.forEach(c => c.remove());
+    const allBody = document.querySelectorAll('#daily-data .body > div');
+    allBody.forEach(el => el.remove());
 
     data.forEach(item => {
       let itemContainer = document.createElement('div');
