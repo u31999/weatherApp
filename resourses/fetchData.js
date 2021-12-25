@@ -119,6 +119,7 @@ const oneCallApi = async (lat, lon, unit) => {
     }
 
     function hourlyData(data) {
+        hourArray = [];
         for (let i = 0; i <= 23; i++) {
             hourArray.push(new HourData(changeToHour(data[i].dt),
                 data[i].weather[0].icon, data[i].temp));
@@ -126,7 +127,7 @@ const oneCallApi = async (lat, lon, unit) => {
 
     }
     function dailyData(data) {
-
+        dailyArray = [];
         const highLowTemp = (temp) => {
             let h, l;
             let values = [...Object.values(temp)];
